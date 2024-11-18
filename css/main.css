@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F7ECDE !important;
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+.container h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.container h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+.container h1:hover::before {
+    height: 50%; 
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+.dotted-line {
+    border: none;
+    border-top: 2px dotted black; 
+    margin: 20px 0; 
+    width: 100%;
+}
+.gradient-text {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.container h2{
+    color: #4caf50;
+    font-size: 25px;
+    font-family:"Righteous",cursive;
+}
+
+.form-label {
+    text-align: left ; 
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.submit-button {
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    width: 150px;
+} 
+.submit-button:hover {
+    background-color: #c53d14;
+} 
+
+
+
+
+
+
